@@ -21,10 +21,12 @@ function calculate(num1, operator, num2) {
 
 const num2 = 3;
 const operator = "+";
+let newScors = [];
 
 for (let i = 0; i < scores.length; i++) {
   let result = calculate(scores[i], operator, num2);
-  console.log(result);
+  newScors.push(result);
 }
+console.log(newScors);
 
 // 기대값: [39, 65, 75, 58, 89, 98, 95, 51, 84]
